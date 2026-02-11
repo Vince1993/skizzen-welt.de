@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 :root{--black: #000;
       --darkblue: #060335;
       --bright: #F8F8F8;
@@ -7,7 +6,7 @@
 
 .default_font, html{scroll-behavior: smooth;
                     font-size: 16px;
-                    font-family: "Noto Sans Mono", monospace;
+                    font-family: "Noto Sans", monospace;
                     font-optical-sizing: auto;
                     font-weight: 300;
                     font-style: normal;
@@ -18,7 +17,7 @@
 header{padding: 3px;}
 .respo_button{border: none; background: transparent; font-size: 50px; width: 40px;}
 .h1_link{flex-grow: 2; color: var(--black);}
-.h1_link h1{text-align: center; font-size: 30px;}
+.h1_link h1{text-align: center; font-size: 28px;}
 
 .logo{display: block; width: 40px; border-radius: 10px;}
 
