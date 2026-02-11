@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+:root{--black: #000;
+      --darkblue: #03011D;
+      --bright: #F8F8F8;
+      --blue: #20129A;}
+
+.default_font, html{font-size: 16px;
+                    font-family: "Noto Sans Mono", monospace;
+                    font-optical-sizing: auto;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-variation-settings: "wdth" 100;} 
+
+*{box-sizing: border-box; padding: 0; margin: 0;}
+
+header{padding: 3px;}
+.respo_button{border: none; background: transparent; font-size: 50px; width: 40px;}
+.h1{text-align: center; flex-grow: 2; font-size: 24px;}
+.logo{display: block; width: 30px; border-radius: 10px;}
+
+.main_navigation ul{list-style-type: none; padding-left: 5px;}
+.main_navigation ul li a{color: var(--bright); text-decoration: none; font-size: 20px;}
+
+.grid_container{display: grid; grid-template-columns: 1fr;}
+
+.image_container{display: flex; flex-direction: column; background-color: var(--black);}
+.image_container img{display:block; width: 100%;}
+.image_container h3{font-size: 16px; font-weight: 400; color: var(--bright); padding: 5px;}
+
+@media(min-width: 700px){
+      .respo_button{display: none;}
+      header * {order: 0;}
+      .logo{order: -1; width: 40px;}
+      .h1{order: 1;}
+      .main_navigation ul{display: flex; flex-direction: row; justify-content: space-evenly; padding: 10px;}
+
+      .grid_container{grid-template-columns: 1fr 1fr; gap: 5px;}
+
+}
+
+@media(min-width: 1000px){
+      .height_100_on_monitor{height: 100px;}
+
+      .grid_container{grid-template-columns: 1fr 1fr 1fr 1fr;}
+}
+
+.flex_row{display: flex; flex-direction: row;}
+.center_horizontically{justify-items: center;}
+.center_vertically{align-items: center;}
+
+.center_text{text-align: center;}
+
+.dark_background{background-color: var(--black);}
+.bright_background{background-color: var(--bright);}
+
+.bright_color{color: var(--bright);}
+
+.padding10{padding: 10px;}
+.padding20{padding: 20px;}
+
+h2{font-size: 20px; font-weight: 700;}
