@@ -10,8 +10,8 @@
 <body>
     <header class="flex_row center_vertically">
         <button class="respo_button">&#9776;</button>
-        <h1 class="h1">skizzen-welt.de</h1>
-        <a href=""><img class="logo" src="raw/IMG_20250506_105602_1.jpg" alt="Das Logo der Webseite zeigt ein Konterfeit einer Geisha"></a>  
+        <a class="h1_link" href="index.html"><h1 class="h1">skizzen-welt.de</h1></a>
+        <a href="index.html"><img class="logo" src="raw/IMG_20250506_105602_1.jpg" alt="Das Logo der Webseite zeigt ein Konterfeit einer Geisha"></a>  
     </header>
     <nav class="dark_background main_navigation">
         <ul>
@@ -24,8 +24,8 @@
     </nav>
 
     <main>
-        <section id="home" class="bright_background flex_row center_text center_horizontically center_vertically padding10 height_100_on_monitor">
-            <p>
+        <section id="home" class="flex_row center_horizontically center_vertically bright_background padding10 height_100_on_monitor">
+            <p class="center_text">
                 Skizzen, einfache Freihand-Zeichnungen, findest du auf dieser kleinen Webseite. Idee dieser Interpräsenz ist es die
                 Bilder in einer digitalen Gallerie zugänglich zu machen.
             </p>
@@ -43,6 +43,29 @@
                     -->
             </div>
         </section>
+        <section id="spenden" class="margintop20">
+            <h2 class="center_text dark_background bright_color padding20">Spenden</h2>
+            <div class="flex_container center_vertically margin10">
+                <p class="center_text padding10 border_radius">
+                    Gefallen dir die Bilder? <br> Du kannst eine kleine Spende an mich via PayPal schicken. 
+                    Die Spende wird verwendet für den Betrieb dieser Webseite.
+                </p>
+                <a class="donation_link bright_color padding10 margin10 border_radius" href="https://www.paypal.com/donate/?hosted_button_id=DXYUE6F68LTHW">Link zu PayPal</a>
+            </div>
+        </section>
+
+        <section id="ueber" class="margintop20">
+            <h2 class="center_text dark_background bright_color padding20">Über diese Seite</h2>
+            <div class="flex_container center_vertically">
+                <img src="raw/about.JPG" alt="Ein Bild von einem See, aufgenommen auf einem Hügel. Es ist eine Graslandschaft zu sehen.">
+                <p class="center_text padding10">
+                    Im Jahr 2023 was ich für ein Jahr in Neuseeland, mit Stiften im Gepäck und die Natur in Übersee war sehr inspirierend. Noch in
+                    Deutschland hatte ich das Ziel mehr zu zeichnen und irgendwann habe ich einfach angefangen. Die Bilder haben keinen
+                    Anspruch darauf Meisterwerke zu sein, sondern das Zeichnen hilft mir loszulassen und kreativ zu sein. Um die Bilder
+                    zeigen zu können, habe ich diese Webseite geschrieben.
+                </p>
+            </div>
+        </section>
     </main>
 
     <script src="jquery.js"></script>
@@ -51,4 +74,7 @@
 </html>
 
 
-
+/*KONTAKT DESIGNEN OHNE FORMULAR NUR EMAIL ANGEBEN
+  FOOTER ERSTELLEN
+  IMPRESSUM ENIFÜGEN
+  HOSTEN*/

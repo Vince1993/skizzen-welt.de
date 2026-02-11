@@ -10,6 +10,11 @@ $(function () {
             </div>`);
         $grid.append($item);
     });
+
+    $(".respo_button").on("click", function () { $("nav").slideToggle(500); });
+
+
+
 });
   
 const data = {
